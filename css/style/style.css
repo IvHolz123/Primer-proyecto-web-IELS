@@ -1,0 +1,630 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: none;
+}
+
+/*Clases comunes a todas las secciones del sitio */
+
+/* fondo de pantalla */
+.imagen__fondo{
+    background-color: #B2D6FF;
+	background: linear-gradient( to right, #B2D6FF , #f8f8f8)
+}
+
+
+/* estilo titulo IELs*/
+
+header{
+    background-color: #FBF433;	
+}
+
+h1{
+    color:red   }
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px ;
+    text-align: right ; 
+    margin-right: 20px ; 
+}
+
+.enlace__logo:link{
+	color: red ;
+}
+
+.enlace__logo:visited{
+	color: red ;
+}
+
+.enlace__logo:hover{
+	color: red ;
+}
+
+.enlace__logo:active{
+	color: red;
+}
+
+/*estilo menu*/
+
+ .estilo__menu{
+	display: flex;
+	list-style: none;
+	background-color: rgb(192, 190, 190);
+ }
+
+ .estilo__menu li{
+	font-size: 25px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 10px;
+	margin-right: 100px;
+	color: #FBF433;
+ }
+ 
+
+
+
+/* estilo titulos*/
+.titulos__secciones{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: underline #FBF433;   
+}
+
+/* estilo textos*/ 
+.texto__secciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify; 
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+/* estilo icono de contacto*/
+
+.icono__contacto:link{
+	icon
+}
+
+/*estilo footer */
+ 
+.iconos__footer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 655px;
+    
+}
+
+.iconos__footer1{
+	width: 200px;
+	height: auto;
+	transition: width 1s;
+}
+	
+.iconos__footer1:hover{
+		transform: scale(1.05);
+	}
+
+
+
+.iconos__footer2{
+	width: 500px;
+	height: auto;
+}
+
+
+
+
+
+
+/*______________________________________________________________________________________________________________*/
+/* estilos index */
+
+ /* imagenes index */
+
+.titulo__index{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-decoration: underline #FBF433;  
+}
+
+.estilo__imagenes__index{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 225px;
+	gap: 225px;
+	
+}
+
+.estilo__imagenes__index1{
+	height: auto;
+	width: 600px;
+	transition: width 1s;
+}
+	
+.estilo__imagenes__index1:hover{
+		width: 800px;
+	}
+	
+	
+
+
+.estilo__imagenes__index2{
+	height: auto;
+	width: 600px;
+	transition: width 1s;
+}
+
+.estilo__imagenes__index2:hover{
+	width: 800px;
+}
+
+.estilo__imagenes__index3{
+	height: auto;
+	width: 600px;
+	transition: width 1s;
+}
+
+.estilo__imagenes__index3:hover{
+	width: 800px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*estilos seccion metodologia */
+
+.texto__seccion__metodologia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center; 
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    line-height: 32px;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/* estilos seccion paquetes */
+/* cards seccion paquetes */
+
+:root{
+	--white-text:#fff;
+	--background:#c8e8f1;
+	--black-text:rgb(68, 66, 66)	
+	--prueba: (180deg,#21c8f6,#637bff);
+}
+
+
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+}
+
+
+.background2-left-column{
+	background: linear-gradient(180deg ,#6ce77c,#118a57);
+}
+
+.background3-left-column{
+	background: linear-gradient(180deg ,#eb6565,#3f0811);
+}
+
+
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	height: 50vh;
+    align-items: center;
+}
+
+.card {
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+	transition: width 1s;
+}
+	
+.card:hover{
+		width: 40rem;
+	}
+	
+
+.card h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.card  h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+	color: var(black-text);
+}
+
+.left-column {	
+	color: var(--white-text);
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-column h2{
+	color: var(--white-text);
+}
+
+.left-column i {
+	font-size: 5rem
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+
+.right-column p{	
+	font-size: 26px;
+	font-style: normal;
+	font-family: Helvetica;
+	color: var(--black-text)
+}
+
+.button {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: var(--white-text);
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+}
+
+/*css para cards bootstrap*/
+
+.cards__paquetes{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	margin-bottom: 100px;
+}
+
+.detalle__paquetes{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(129, 125, 125);
+	font-style: italic;
+    font-size: 25px;
+    text-align: justify; 
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 32px;
+
+}
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------*/
+/* estilos seccion contacto */
+
+.style__links__contacto
+{
+	
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.style__iconos__contacto{
+	margin-left: 545px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	display: flex;
+	list-style: none;
+}
+
+.estilo__formulario{
+	align-content: center;
+	text-align: center;
+}
+
+
+
+
+/* MEDIA QUERIES: IPHONE SE, IPAD MINI/AIR Y DESKTOP-------------------------------------------------------------------*/
+
+/* media queries iphone SE*/
+@media only screen and (min-width: 370px) and (max-width: 400px) {
+	
+/* ajuste clases comunes a todas las secciones */
+
+	.estilo__menu li{
+		font-size: 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.titulos__secciones{
+		font-size: 30px;
+	}
+
+	.texto__secciones{
+		font-size: 15px;
+		text-align: justify; 
+		margin-right: 30px;
+		margin-left: 30px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		line-height: 16px;
+	}
+
+	.iconos__footer{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 9%;
+		
+	}
+	
+	.iconos__footer1{
+		width: 100px;
+		height: auto;
+		
+	}
+		
+	
+	.iconos__footer2{
+		width: 250px;
+		height: auto;
+	}
+	
+	/*ajuste clases del index */
+
+	.titulo__index{
+		font-size: 30px;
+		
+	}
+
+	.estilo__imagenes__index{
+		margin-top: 190px;
+		margin-bottom: 225px;
+		gap: 225px;
+	}
+
+	.estilo__imagenes__index1{
+		height: auto;
+		width: 300px;
+	}
+	
+	.estilo__imagenes__index2{
+		height: auto;
+		width: 300px;
+	}
+	
+	.estilo__imagenes__index3{
+		height: auto;
+		width: 300px;
+	}
+
+
+
+	/*ajustes seccion contacto */
+
+.style__links__contacto
+{
+	
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	
+}
+
+.style__iconos__contacto{
+	margin-left: 55px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	display: flex;
+	list-style: none;
+	
+}
+
+
+ /*ajustes seccion metodologia */
+
+.texto__seccion__metodologia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center; 
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 16px;
+}
+
+/* ajustes seccion paquetes*/
+
+.card {
+	width: 20rem;
+	height: 9rem;
+}
+
+.right-column p{	
+	font-size: 15px;
+}
+
+.right-column {
+	padding: 20px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+	
+.button {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: var(--white-text);
+	font-size: 0.9rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+}
+
+.cards__paquetes{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-bottom: 50x;
+}
+
+.detalle__paquetes{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(129, 125, 125);
+	font-style: italic;
+    font-size: 15px;
+    text-align: justify; 
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 16px;
+
+}
+
+}
+
+	/* Tablet Styles */
+	@media only screen and (min-width: 401px) and (max-width: 960px) {
+	
+/*ajustes clases comunes a todas las secciones */
+
+	.estilo__menu li{
+		font-size: 25px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+
+	.iconos__footer{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 173px;
+		
+	}
+	
+	.iconos__footer1{
+		width: 200px;
+		height: auto;
+		
+	}
+		
+	
+	.iconos__footer2{
+		width: 400px;
+		height: auto;
+	}
+	
+
+	/*ajustes seccion index*/
+
+	.estilo__imagenes__index1{
+		height: auto;
+		width: 500px;
+		
+	}
+	
+	.estilo__imagenes__index2{
+		height: auto;
+		width: 500px;
+	}
+	
+	.estilo__imagenes__index3{
+		height: auto;
+		width: 500px;
+	}
+	
+	/*ajustes seccion contacto*/
+
+.style__links__contacto
+{
+	
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.style__iconos__contacto{
+	margin-left: 300px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	display: flex;
+	list-style: none;
+}
+	}
+
+
+
+
+
+
+
+
+	
+	   
