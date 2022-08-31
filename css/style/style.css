@@ -14,58 +14,6 @@
 	background: linear-gradient( to right, #B2D6FF , #f8f8f8)
 }
 
-
-/* estilo titulo IELs*/
-
-header{
-    background-color: #FBF433;	
-}
-
-h1{
-    color:red   }
-
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px ;
-    text-align: right ; 
-    margin-right: 20px ; 
-}
-
-.enlace__logo:link{
-	color: red ;
-}
-
-.enlace__logo:visited{
-	color: red ;
-}
-
-.enlace__logo:hover{
-	color: red ;
-}
-
-.enlace__logo:active{
-	color: red;
-}
-
-/*estilo menu*/
-
- .estilo__menu{
-	display: flex;
-	list-style: none;
-	background-color: rgb(192, 190, 190);
- }
-
- .estilo__menu li{
-	font-size: 25px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin-left: 10px;
-	margin-right: 100px;
-	color: #FBF433;
- }
- 
-
-
-
 /* estilo titulos*/
 .titulos__secciones{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -91,7 +39,7 @@ h1{
 /* estilo icono de contacto*/
 
 .icono__contacto:link{
-	icon
+	icon: 1px
 }
 
 /*estilo footer */

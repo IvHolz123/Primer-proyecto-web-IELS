@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none; }
+
+/*Clases comunes a todas las secciones del sitio */
+/* fondo de pantalla */
+.imagen__fondo {
+  background-color: #B2D6FF;
+  background: linear-gradient(to right, #B2D6FF, #f8f8f8); }
+
+/* estilo titulos*/
+.titulos__secciones {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline #FBF433; }
+
+/*estilos seccion metodologia */
+.texto__seccion__metodologia {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  line-height: 32px; }
+
+/* estilo icono de contacto*/
+.icono__contacto:link {
+  icon: 1px; }
+
+/*estilo footer */
+.iconos__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 655px; }
+  .iconos__footer .iconos__footer1 {
+    width: 200px;
+    height: auto;
+    transition: width 1s; }
+    .iconos__footer .iconos__footer1 .iconos__footer1:hover {
+      transform: scale(1.05); }
+  .iconos__footer .iconos__footer2 {
+    width: 500px;
+    height: auto; }
+
+    /* MEDIA QUERIES: IPHONE SE, IPAD MINI/AIR Y DESKTOP-------------------------------------------------------------------*/
+
+/* media queries iphone SE*/
+@media only screen and (min-width: 370px) and (max-width: 400px) {
+	
+  /* ajuste clases comunes a todas las secciones */
+  
+    .estilo__menu li{
+      font-size: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .titulos__secciones{
+      font-size: 30px;
+    }
+  
+    .texto__secciones{
+      font-size: 15px;
+      text-align: justify; 
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      line-height: 16px;
+    }
+  
+    .iconos__footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 9%; }
+      .iconos__footer .iconos__footer1 {
+        width: 100px;
+        height: auto; }
+      .iconos__footer .iconos__footer2 {
+        width: 250px;
+        height: auto; }
+
+
+    
+    /*ajuste clases del index */
+  
+    .titulo__index{
+      font-size: 30px;
+      
+    }
+  
+    .estilo__imagenes__index{
+      margin-top: 190px;
+      margin-bottom: 225px;
+      gap: 225px;
+    }
+  
+    .estilo__imagenes__index1{
+      height: auto;
+      width: 300px;
+    }
+    
+    .estilo__imagenes__index2{
+      height: auto;
+      width: 300px;
+    }
+    
+    .estilo__imagenes__index3{
+      height: auto;
+      width: 300px;
+    }
+  
+  
+  
+    /*ajustes seccion contacto */
+  
+  .style__links__contacto
+  {
+    
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+  }
+  
+  .style__iconos__contacto{
+    margin-left: 55px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  
+   /*ajustes seccion metodologia */
+  
+  .texto__seccion__metodologia{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      text-align: center; 
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      line-height: 16px;
+  }
+  
+  /* ajustes seccion paquetes*/
+  
+  .card {
+    width: 20rem;
+    height: 9rem;
+  }
+  
+  .right-column p{	
+    font-size: 15px;
+  }
+  
+  .right-column {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+    
+  }
+    
+  .button {
+    border-radius: 3rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: var(--white-text);
+    font-size: 0.9rem;
+    padding: .8rem 1.5rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+  }
+  
+  .cards__paquetes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 50x;
+  }
+  
+  .detalle__paquetes{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(129, 125, 125);
+    font-style: italic;
+      font-size: 15px;
+      text-align: justify; 
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      line-height: 16px;
+  
+  }
+  
+  }
+  
+    /* Tablet Styles */
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+  /*ajustes clases comunes a todas las secciones */
+  
+    .estilo__menu li{
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 10px;
+      margin-right: 30px;
+    }
+
+    .iconos__footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 173px; }
+      .iconos__footer .iconos__footer1 {
+        width: 200px;
+        height: auto; }
+      .iconos__footer .iconos__footer2 {
+        width: 400px;
+        height: auto; }
+  
+  
+    /*ajustes seccion index*/
+  
+    .estilo__imagenes__index1{
+      height: auto;
+      width: 500px;
+      
+    }
+    
+    .estilo__imagenes__index2{
+      height: auto;
+      width: 500px;
+    }
+    
+    .estilo__imagenes__index3{
+      height: auto;
+      width: 500px;
+    }
+    
+    /*ajustes seccion contacto*/
+  
+  .style__links__contacto
+  {
+    
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  
+  .style__iconos__contacto{
+    margin-left: 300px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    list-style: none;
+  }
+    }
+  

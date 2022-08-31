@@ -1,0 +1,24 @@
+{
+  "name": "pagina-web-iels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvHolz123/Primer-proyecto-web-IELS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvHolz123/Primer-proyecto-web-IELS/issues"
+  },
+  "homepage": "https://github.com/IvHolz123/Primer-proyecto-web-IELS#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
