@@ -1,0 +1,547 @@
+@import"colores";
+@import"fuentes";
+@import"posicion";
+@import"textos";
+
+@mixin margenes ($margin-top1, $margin-bottom1, $margin-costado1){
+	margin-top: $margin-top1;
+	margin-bottom: $margin-bottom1;
+	margin-right: $margin-costado1;
+	margin-left: $margin-costado1;
+}
+
+@mixin margenes2 ($margin-top2, $margin-bottom2, $margin-costado2){
+	margin-top: $margin-top2;
+	margin-bottom: $margin-bottom2;
+	margin-right: $margin-costado2;
+	margin-left: $margin-costado2;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: none;
+}
+
+/*Clases comunes a todas las secciones del sitio */
+
+/*fuente */
+
+@font-face {
+	font-family: Gotham;
+	src: url(fuentes\Fuente.Iels.otf);
+}
+
+
+
+/* fondo de pantalla */
+.imagen__fondo{
+    background-color: #B2D6FF;
+	background: linear-gradient( to right, #78a8df , #B2D6FF, #f8f8f8)
+}
+
+.estilo__barra__promocion{
+	background: linear-gradient(to right, $color3, $color4);
+	font-family: $font-familiy;
+	color: $color5;
+	font-size: $fz4;
+	padding: 50px;
+  
+
+	.boton__inscribite:link{
+		color: $color1;
+	}
+	
+	.boton__inscribite:visited{
+		color: $color1;
+	}
+	
+	.boton__inscribite:hover{
+		color: $color1;
+	}
+	
+	.boton__inscribite:active{
+		color: $color1;
+	}
+	
+}
+  
+/* estilo textos*/
+.titulos__secciones{
+    font-family: $font-familiy;
+    font-size: $fz1;
+    text-align: $text-align1;
+    margin-top: $margin-top1;
+    margin-bottom: $margin-bottom1;
+    text-decoration: underline $color2; }
+
+.texto__secciones{
+    font-family: $font-familiy;
+    font-size: $fz3;
+    text-align: $text-align2; 
+    @include margenes(50px, 50px, 200px);
+    line-height: $line-height1;
+}
+
+.texto__secciones__frase{
+	background-color: $color2;
+	font-family: $font-familiy;
+    font-size: $fz2;
+    text-align: $text-align3; 
+	@include margenes(50px, 50px, 200px);
+    line-height: $line-height1;
+}
+
+.espacio__vacio{
+	padding: 50px;
+}
+
+/*estilo footer */
+ 
+.iconos__footer{
+	display: $dF;
+	flex-direction: row;
+	align-items: $text-align1;
+	gap: 655px;
+    
+
+
+.iconos__footer1{
+	width: 200px;
+	height: auto;
+	transition: width 1s;
+
+	
+.iconos__footer1:hover{
+		transform: scale(1.05);
+	}
+}
+
+
+
+.iconos__footer2{
+	width: 500px;
+	height: auto;
+}
+}
+
+
+
+
+
+
+/*______________________________________________________________________________________________________________*/
+/* estilos index */
+
+ /* imagenes index */
+
+.titulo__index{
+	font-family: $font-familiy;
+    font-size: $fz1;
+    text-align: $text-align1;
+    margin-top: $margin-top1;
+    margin-bottom: 0px;
+    text-decoration: underline $color2;  
+}
+
+.estilo__imagenes__index{
+	display: $dF;
+	flex-direction: column;
+	align-items: $text-align1;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	gap: 225px;}
+	
+
+
+.estilo__imagenes__index1{
+	height: auto;
+	width: 600px;
+	transition: width 1s;}
+
+	
+.estilo__imagenes__index1:hover{
+	transform: scale(1.40);
+	}
+
+	
+	
+
+
+.estilo__imagenes__index2{
+	height: auto;
+	width: 600px;
+	transition: width 1s;}
+
+
+.estilo__imagenes__index2:hover{
+	transform: scale(1.40);
+}
+
+.estilo__imagenes__index3{
+	height: auto;
+	width: 600px;
+	transition: width 1s;}
+
+
+.estilo__imagenes__index3:hover{
+	transform: scale(1.40);
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*estilos seccion metodologia */
+
+.texto__seccion__metodologia{
+    font-family: $font-familiy;
+    font-size: $fz3;
+    text-align: $text-align1; 
+    @include margenes(50px, 50px, 200px);
+    margin-bottom: 0px;
+    line-height: $line-height1;
+}
+
+.video{
+	margin-left: 20%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/* estilos seccion paquetes */
+/* cards seccion paquetes */
+
+.container{
+	display: $dF;
+	justify-content: $text-align1;
+	height: 50vh;
+    align-items: $text-align1;}
+
+
+.card {
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: $dF;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+	transition: width 1s;
+
+	
+.card:hover{
+		width: 40rem;
+	}
+}
+
+
+
+
+	
+/*css para cards bootstrap*/
+
+.cards__paquetes{
+	display: $dF;
+	flex-direction: row;
+	align-content: $text-align1;
+	margin-bottom: 100px;
+}
+
+.detalle__paquetes{
+	font-family: $font-family2;
+	color: rgb(129, 125, 125);
+	font-style: italic;
+    font-size: $fz3;
+    text-align: $text-align2; 
+    margin-right: $margin-costado1;
+    margin-left: $margin-costado1;
+    margin-top: 10px;
+    margin-bottom: $margin-bottom1;
+    line-height: $line-height1;
+
+}
+
+  /*------------------------------------------------------------------------------------------------------------------*/
+/* estilos seccion contacto */
+
+.style__links__contacto{
+	font-size: $fz3;
+	font-family: $font-familiy;
+	text-align: $text-align1;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.style__iconos__contacto{
+	display: $dF;
+	flex-direction: row;
+	align-content: $text-align1;
+	gap: 50px;
+	margin-left: 40%;
+}
+
+
+.icono__contacto1{
+	transition: width 1s;}
+
+	
+.icono__contacto1:hover{
+		transform: scale(1.10);
+	}
+
+
+
+
+
+.icono__contacto2{
+		transition: width 1s;}
+	
+		
+.icono__contacto2:hover{
+		transform: scale(1.10);
+}
+
+
+
+
+.estilo__formulario{
+	align-content: $text-align1;
+	text-align: $text-align1;
+}
+
+
+
+
+/* MEDIA QUERIES: IPHONE SE, IPAD MINI/AIR Y DESKTOP-------------------------------------------------------------------*/
+
+/* media queries iphone SE*/
+@media only screen and (min-width: 370px) and (max-width: 400px) {
+	
+	/* ajuste clases comunes a todas las secciones */
+	
+		
+	
+		.titulos__secciones{
+			font-size: $fz2;
+		}
+	
+		.texto__secciones{
+			font-size: $fz5;
+			text-align: $text-align2; 
+			@include margenes2(25px, 25px, 30px);
+			line-height: $line-height2;
+		}
+
+		.texto__secciones__frase{
+			background-color: $color2;
+			font-family: $font-familiy;
+			font-size: $fz5;
+			text-align: $text-align3; 
+			@include margenes2(25px, 25px, 30px);
+			line-height: $line-height1;
+		}
+	
+		.iconos__footer{
+			display: $dF;
+			flex-direction: row;
+			align-items: $text-align1;
+			gap: 9%;
+			
+		
+		
+		.iconos__footer1{
+			width: 100px;
+			height: auto;
+			
+		}
+			
+		
+		.iconos__footer2{
+			width: 250px;
+			height: auto;
+		}
+	}
+		
+		/*ajuste clases del index */
+	
+		.titulo__index{
+			font-size: $fz2;
+			
+		}
+	
+		.estilo__imagenes__index{
+			margin-top: 190px;
+			margin-bottom: 225px;
+			gap: 225px;
+		
+	
+		.estilo__imagenes__index1{
+			height: auto;
+			width: 300px;
+		}
+		
+		.estilo__imagenes__index2{
+			height: auto;
+			width: 300px;
+		}
+		
+		.estilo__imagenes__index3{
+			height: auto;
+			width: 300px;
+		}
+	}
+	
+	
+	
+		/*ajustes seccion contacto */
+	
+	.style__links__contacto
+	{
+		
+		font-size: $fz3;
+		font-family: $font-familiy;
+		text-align: $text-align1;
+		margin-top: 75px;
+		margin-bottom: 75px;
+		
+	}
+	
+	.style__iconos__contacto{
+		margin-left: 55px;
+		margin-top: 75px;
+		margin-bottom: 75px;
+		display: $dF;
+		list-style: none;
+		
+	}
+	
+	
+	 /*ajustes seccion metodologia */
+	
+	.texto__seccion__metodologia{
+		font-family: $font-familiy;
+		font-size: $fz5;
+		text-align: $text-align1; 
+		@include margenes2(25px, 25px, 30px);
+		line-height: $line-height2;
+	}
+	
+	/* ajustes seccion paquetes*/
+	
+	.card {
+		width: 20rem;
+		height: 9rem;
+    }
+	
+	.cards__paquetes{
+		display: $dF;
+		flex-direction: column;
+		align-content: $text-align1;
+		margin-bottom: $margin-bottom1;
+	}
+	
+	.detalle__paquetes{
+		font-family: $font-family2;
+		color: rgb(129, 125, 125);
+		font-style: italic;
+		font-size: $fz5;
+		text-align: $text-align2; 
+		@include margenes2(25px, 25px, 30px);
+		margin-top: 10px;
+		margin-bottom: $margin-bottom1;
+		line-height: $line-height2;
+	
+	}
+	
+	}
+	
+		/* Tablet Styles */
+		@media only screen and (min-width: 401px) and (max-width: 960px) {
+		
+	/*ajustes clases comunes a todas las secciones */
+	
+		
+	
+		.iconos__footer{
+			display: $dF;
+			flex-direction: row;
+			align-items: $text-align1;
+			gap: 173px;
+			
+		
+		
+		.iconos__footer1{
+			width: 200px;
+			height: auto;
+			
+		}
+			
+		
+		.iconos__footer2{
+			width: 400px;
+			height: auto;
+		}
+	}
+		
+	
+		/*ajustes seccion index*/
+	
+		.estilo__imagenes__index{
+		
+		.estilo__imagenes__index1{
+			height: auto;
+			width: 500px;
+			
+		}
+		
+		.estilo__imagenes__index2{
+			height: auto;
+			width: 500px;
+		}
+		
+		.estilo__imagenes__index3{
+			height: auto;
+			width: 500px;
+		}
+	}
+		
+		/*ajustes seccion contacto*/
+	
+	.style__links__contacto
+	{
+		
+		font-size: $fz3;
+		font-family: $font-familiy;
+		text-align: $text-align1;
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+	
+	.style__iconos__contacto{
+		margin-left: 300px;
+		margin-top: 75px;
+		margin-bottom: 75px;
+		display: $dF;
+		list-style: none;
+	}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		   
