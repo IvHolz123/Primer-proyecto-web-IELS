@@ -3,6 +3,17 @@
 @import"posicion";
 @import"textos";
 
+/* use maps para los colores*/
+$paleta: (
+"color1": rgb(229, 255, 0),
+"color2": #FBF433,
+"color3": rgb(207, 22, 22),
+"color4": rgb(243, 112, 112),
+"color5": aliceblue
+);
+
+/* mixin para margenes */
+
 @mixin margenes ($margin-top1, $margin-bottom1, $margin-costado1){
 	margin-top: $margin-top1;
 	margin-bottom: $margin-bottom1;
@@ -44,9 +55,9 @@
 }
 
 .estilo__barra__promocion{
-	background: linear-gradient(to right, $color3, $color4);
+	background: linear-gradient(to right, map-get($map: $paleta, $key:"color3" ), map-get($map: $paleta, $key:"color4" ));
 	font-family: $font-familiy;
-	color: $color5;
+	color: map-get($map: $paleta, $key:"color5" );
 	font-size: $fz4;
 	padding: 50px;
   
@@ -56,15 +67,15 @@
 	}
 	
 	.boton__inscribite:visited{
-		color: $color1;
+		color: map-get($map: $paleta, $key:"color1" );
 	}
 	
 	.boton__inscribite:hover{
-		color: $color1;
+		color: map-get($map: $paleta, $key:"color1" );
 	}
 	
 	.boton__inscribite:active{
-		color: $color1;
+		color: map-get($map: $paleta, $key:"color1" );
 	}
 	
 }
@@ -76,7 +87,7 @@
     text-align: $text-align1;
     margin-top: $margin-top1;
     margin-bottom: $margin-bottom1;
-    text-decoration: underline $color2; }
+    text-decoration: underline map-get($map: $paleta, $key:"color2" ); }
 
 .texto__secciones{
     font-family: $font-familiy;
@@ -87,7 +98,7 @@
 }
 
 .texto__secciones__frase{
-	background-color: $color2;
+	background-color: map-get($map: $paleta, $key:"color2" );;
 	font-family: $font-familiy;
     font-size: $fz2;
     text-align: $text-align3; 
@@ -95,43 +106,97 @@
     line-height: $line-height1;
 }
 
+.call__to__action{
+	display: scroll; 
+	position: fixed; 
+	width: 150px;
+	height: auto;
+	bottom: 30px; 
+	right: 60px;
+	transition: width 1s;}
+
+
+.call__to__action:hover{
+	transform: scale(1.05);
+}
+
+
+
+
+
 .espacio__vacio{
 	padding: 50px;
 }
 
 /*estilo footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: none;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
  
-.iconos__footer{
-	display: $dF;
-	flex-direction: row;
-	align-items: $text-align1;
-	gap: 655px;
-    
-
-
-.iconos__footer1{
-	width: 200px;
-	height: auto;
-	transition: width 1s;
-
-	
-.iconos__footer1:hover{
-		transform: scale(1.05);
-	}
-}
-
-
-
-.iconos__footer2{
-	width: 500px;
-	height: auto;
-}
-}
-
-
-
-
-
 
 /*______________________________________________________________________________________________________________*/
 /* estilos index */
@@ -144,7 +209,7 @@
     text-align: $text-align1;
     margin-top: $margin-top1;
     margin-bottom: 0px;
-    text-decoration: underline $color2;  
+    text-decoration: underline map-get($map: $paleta, $key:"color2" );  
 }
 
 .estilo__imagenes__index{
@@ -343,7 +408,7 @@
 		}
 
 		.texto__secciones__frase{
-			background-color: $color2;
+			background-color: map-get($map: $paleta, $key:"color2" );;
 			font-family: $font-familiy;
 			font-size: $fz5;
 			text-align: $text-align3; 
@@ -351,26 +416,15 @@
 			line-height: $line-height1;
 		}
 	
-		.iconos__footer{
-			display: $dF;
-			flex-direction: row;
-			align-items: $text-align1;
-			gap: 9%;
-			
-		
-		
-		.iconos__footer1{
+		.call__to__action{
+			display: scroll; 
+			position: fixed; 
 			width: 100px;
 			height: auto;
-			
-		}
-			
-		
-		.iconos__footer2{
-			width: 250px;
-			height: auto;
-		}
-	}
+			bottom: 15px; 
+			right: 15px;
+			transition: width 1s;}
+	
 		
 		/*ajuste clases del index */
 	
@@ -435,6 +489,8 @@
 		@include margenes2(25px, 25px, 30px);
 		line-height: $line-height2;
 	}
+
+	
 	
 	/* ajustes seccion paquetes*/
 	
@@ -472,26 +528,6 @@
 	
 		
 	
-		.iconos__footer{
-			display: $dF;
-			flex-direction: row;
-			align-items: $text-align1;
-			gap: 173px;
-			
-		
-		
-		.iconos__footer1{
-			width: 200px;
-			height: auto;
-			
-		}
-			
-		
-		.iconos__footer2{
-			width: 400px;
-			height: auto;
-		}
-	}
 		
 	
 		/*ajustes seccion index*/
